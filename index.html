@@ -8,8 +8,84 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Accessibilité</h1>
+    <!-- 1.liens et boutons -->
+    <!-- utiliser les bonnes balises pour la navigation -->
+    <!-- ne pas mettre de lien sans contenu -->
 
+    <button type="submit">Validez votre formulaire</button>
+
+    <a href="https://www.google.fr" target="blank">google</a>
+
+    <label for="prenom">Entrez votre prenom</label>
+    <input type="text" id="prenom" />
+
+    <!-- 2.langues -->
+    <!-- mettre la langue utilisée dans les balises -->
+    <!-- lorsqu'un utilisateur utilise une liseuse d'écran la prononciation sera la bonne -->
+
+    <blockquote lang="fr">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quae qui
+        cum unde. Maxime rerum repudiandae non? Libero, rerum! Distinctio?
+      </p>
+    </blockquote>
+
+    <!-- 3.la semantique -->
+    <!-- utliser les bonnes balises de navigation -->
+
+    <header>
+      <nav>
+        <!-- navigation dans l'entête de la page -->
+      </nav>
+      <aside>
+        <!-- navigation latérale -->
+      </aside>
+    </header>
+    <main>
+      <section>
+        <article>
+          <!-- corps de la page / sujet / details -->
+        </article>
+      </section>
+    </main>
+    <footer>
+      <!-- pied de page -->
+    </footer>
+
+    <!-- 4.le focus -->
+    <!-- le tab permet de naviguer sur les liens et boutons -->
+
+    <a href="#">accueil</a>
+    <a href="#">services</a>
+    <a href="#">contact</a>
+
+    <button type="button">ajuter un produit</button>
+    <button type="button" tabindex="-1">modifier un produit</button>
+    <!-- tabindex permet de hierarchiser l'ordre de passage -->
+    <!-- un tabindex négatif permet de ne pas survoler l'element -->
+    <button type="button">supprimer un produit</button>
+
+    <!-- 4.images -->
+    <!-- mettre une description precise de l'image en alt et en brut -->
+    <p>
+      <img src="lapin.jpg" alt="un lapin blanc dans un terrier" />
+      Lapin blanc dans un terrier 2022
+    </p>
+
+    <!-- 5.les titres -->
+    <!-- un seul h1 -->
+    <h1>Accessibilité</h1>
+    <!-- h2 3 max -->
+    <!-- h3 ++ -->
+    <!-- ect dans l'ordre en les utilisant tous sans passer d'un h1 a un h8 par exemple -->
+
+    <!-- 6.divers -->
+    <!-- toujours avoir des couleurs bien contrastées -->
+    <!-- https://colorable.jxnblk.com/  pour tester la note des contrastes utilisés -->
+    <!-- eviter les animations trop flash pour les sites non créatifs-->
+
+    <!-- 7.audit -->
+    <!-- faire un audit accesibilité dans lighthouse dans la console et obtenir le resultat-->
     <script src="./app.js"></script>
   </body>
 </html>
